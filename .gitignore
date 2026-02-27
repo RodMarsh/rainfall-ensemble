@@ -1,0 +1,20 @@
+# Large data
+data/cache/
+data/forcing/rainfall/*.txt
+data/forcing/evap/*.txt
+data/spatial/*.shp
+data/spatial/*.dbf
+data/spatial/*.shx
+data/spatial/*.prj
+data/spatial/*.sbn
+data/spatial/*.sbx
+data/spatial/*.CPG
+data/spatial/*.shp.xml
+outputs/ensemble_members/
+
+.Rhistory
+.RData
+.Rproj.user/
+__pycache__/
+*.pyc
+.venv/

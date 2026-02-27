@@ -1,0 +1,26 @@
+uncertainty:
+  # stationary daily SDs (mm) from Jeffrey et al.
+  sigma_P: [5,5,5,4,3,2,2,2,2,3,4,5]
+  phi_P:   [0.6,0.6,0.6,0.5,0.4,0.3,0.3,0.3,0.3,0.4,0.5,0.6]
+  L_P_km:  [90,90,90,110,130,150,150,150,140,120,100,90]
+  p_tail:  [0.10,0.10,0.10,0.08,0.05,0.03,0.03,0.03,0.04,0.06,0.08,0.10]
+  k_tail:  2.0
+  sigma_E: [1.2,1.2,1.2,1.2,1.2,1.2,1.2,1.2,1.2,1.2,1.2,1.2]
+  phi_E:   [0.4,0.4,0.4,0.4,0.4,0.4,0.4,0.4,0.4,0.4,0.4,0.4]
+  L_E_km:  [200,200,200,200,200,200,200,200,200,200,200,200]
+  rho_PE:  [-0.15,-0.15,-0.20,-0.20,-0.15,-0.10,-0.10,-0.10,-0.10,-0.10,-0.15,-0.15]
+  pmin_mm: [0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5]
+
+ensemble:
+  n_members: 50
+  seed: 20251107
+  parallel: true
+  max_workers: 8
+
+paths:
+  forcing_rain: "data/forcing/rainfall"
+  forcing_pet:  "data/forcing/evap"
+  shapefile:    "data/spatial/NAMCatchments.shp"
+  alias_map:    "data/metadata/alias_map.csv"
+  areas_tbl:    "data/metadata/namSubcatchmentAreaskm2.csv"
+  output_dir:   "outputs/ensemble_members"
